@@ -38,12 +38,12 @@
   </head>
   <!-------------------body section ---------------->
   <body class="font-manrope">
-    <header class="md:container md:mx-auto">
+    <header class="md:container md:mx-auto lg:px-24 px-8 py-8 ">
         <!--------------------- nav-section -------------->
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
+                  <div class="dropdown justify-between">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
@@ -55,7 +55,7 @@
                       <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost font-extrabold text-4xl">Hockey<span class="text-[#FF4240]">’</span> s</a>
+                  <a class="btn btn-ghost lg:text-4xl font-extrabold text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 font-semibold">
@@ -70,13 +70,112 @@
                   </ul>
                 </div>
                 <div class="navbar-end px-1.5">
-                  <a class="btn bg-custompink text-white ">Button</a>
+                  <a class="btn bg-custompink text-white ">Get Ticket</a>
                 </div>
               </div>
         </nav>
-        <section></section>
+        <!-----------carousel section --------- -->
+        <section class="md:container md:mx-auto lg:relative ">
+            <div class="carousel lg:w-full lg:h-[550px] rounded-lg ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full h-full" alt="">
+                  <div class="absolute flex lg:justify-start justify-center gap-7 bottom-10 left-10  ">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full h-full" alt="">
+                  <div class="absolute flex lg:justify-start justify-center gap-7 bottom-10 left-10  ">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full h-full" alt="">
+                  <div class="absolute flex justify-start gap-7 bottom-10 left-10  ">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide4" class="btn btn-circle  bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full h-full" alt="">
+                  <div class="absolute flex justify-start gap-7 bottom-10 left-10  ">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white hover:text-black">❮</a> 
+                    <a href="#slide1" class="btn btn-circle  bg-black text-white hover:text-black">❯</a>
+                  </div>
+                </div> 
+                </div>
+              </div>
+              <!-------relative part ------>
+              <div
+          class="mt-4 lg:mt-0 flex flex-col gap-4 bg-black p-8 rounded-2xl static lg:absolute bottom-8 right-8 w-full lg:max-w-[500px]"
+        >
+          <h2
+            class="text-white font-extrabold text-[18px] md:text-xl lg:text-2xl"
+          >
+            Meet all the heroes from the field
+          </h2>
+          <p class="text-gray-600 text-sm font-bold">
+            Brave heroes in diverse fields triumph, inspiring through passion, innovation, and resilience, shaping a brighter future.
+          </p>
+        </div>
+      </div>
+        </section>
     </header>
-    <main></main>
+    <main class="container mx-auto lg:px-24 px-8 py-8">
+      <section class="">
+        <!-------professional part  -->
+        <hr class="border-t-2 border-dashed border-gray-400 my-4">
+
+        <div class="space-y-6 flex p-16 flex-col justify-center items-center">
+          <h3 class="text-4xl font-extrabold text-center text-primary text-black">Professional Hockeys Club</h3>
+          <p class="text-secondary font-medium text-gray-600 text-center">Dit amet consectetur. Condimentum dignissim
+              adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+        <hr class="border-t-2 border-dashed border-gray-400 my-4">
+
+        <!----------  progress part  ----------->
+        <div  class="grid grid-cols-1 mt-16 lg:grid-cols-4 gap-6 ">
+          <div class="flex flex-col justify-center items-center">
+            <div class="radial-progress text-[#ff4240]" style="--value:70;" role="progressbar"><span class="text-black font-extrabold text-lg">70%</span></div>
+            <h4 class="pt-6 text-lg font-semibold text-primary text-black">Prayer Facility</h4>
+            <p class="pt-4 text-secondary text-center text-gray-600">Sacred space for reflection and spiritual connection, the prayer facility welcomes seekers with tranquility, fostering serenity, peace, and unity.</p>
+        </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="radial-progress font-semibold  text-[#49D293]" style="--value:85;" role="progressbar "><span class="text-black font-extrabold text-lg">85%</span></div>
+            <h4 class="pt-6 text-lg text-black font-semibold text-primary">Experienced Coach</h4>
+            <p class="pt-4 text-secondary text-gray-600 text-center">
+              Seasoned coach navigates athletes through challenges, refining skills, fostering resilience, and sculpting champions with wisdom and dedication.
+            </p>
+        </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="radial-progress text-[#FFB546]" style="--value:92;" role="progressbar"><span class="text-black font-extrabold text-lg">92%</span></div>
+            <h4 class="pt-6 text-lg font-semibold text-primary text-black">Senior Player</h4>
+            <p class="pt-4 text-secondary text-center text-gray-600">
+              Experienced senior player, a seasoned maestro on the field, exemplifies leadership, skill, and resilience, inspiring teammates with unmatched prowess.
+            </p>
+        </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="radial-progress text-[#4C8DF1]" style="--value:96;" role="progressbar"><span class="text-black font-extrabold text-lg">96%</span></div>
+            <h4 class="pt-6 text-lg font-semibold text-primary text-black">Training Ground</h4>
+            <p class="pt-4 text-secondary text-center text-gray-600">Nurturing talent and ambition, the training ground is a crucible of dedication, discipline, and growth, shaping champions with precision.</p>
+        </div>
+        </div>
+      </section>
+      <!--------------- program section ---------->
+        <hr class="border-t-2 border-dashed mt-36 border-gray-400 my-4">
+
+        <div class="space-y-6 p-24 flex  flex-col justify-center items-center">
+          <h3 class="text-4xl  font-extrabold text-center text-primary text-black">Program Sections</h3>
+          <p class="text-secondary font-medium text-gray-600 text-center">Hockey program sections encompass skill development, tactical strategies, strength conditioning, and teamwork, fostering a holistic approach for players' success on the ice. </p>
+        </div>
+        <hr class="border-t-2 border-dashed border-gray-400 my-4">
+        <div class="grid grid-cols-2 mt-20 gap-6 bg-slate-300">
+
+        </div>
+      </section>
+    </main>
     <footer></footer>
     </main>
   </body>
